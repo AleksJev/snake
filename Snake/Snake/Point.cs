@@ -15,6 +15,7 @@ namespace Snake
         
         public Point()
         {
+
         }
         /*конструктор*/
         public Point(int _x, int _y, char _sym)
