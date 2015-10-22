@@ -11,13 +11,13 @@ namespace Snake
         static void Main(string[] args)
         {
 
-            //Console.SetBufferSize(180, 180);
+            //Console.SetBufferSize(30, 80);
 
             //Отрисовка рамки
-            HorizontalLine upLIne = new HorizontalLine(0, 78, 0, '#');
-            HorizontalLine downLine = new HorizontalLine(0, 78, 24, '#');
-            VerticalLine leftLine = new VerticalLine(0, 24, 0, '#');
-            VerticalLine rightLine = new VerticalLine(0, 24, 78, '#');
+            HorizontalLine upLIne = new HorizontalLine(0, 78, 0, '+');
+            HorizontalLine downLine = new HorizontalLine(0, 78, 24, '+');
+            VerticalLine leftLine = new VerticalLine(0, 24, 0, '+');
+            VerticalLine rightLine = new VerticalLine(0, 24, 78, '+');
             upLIne.Drow();
             downLine.Drow();
             leftLine.Drow();
@@ -25,8 +25,9 @@ namespace Snake
             
             //отрисовка точек
             Point p = new Point(4, 5, '#');
-            p.Draw();
-            
+            Snake snake = new Snake(p, 4, Direction.RIGHT);
+            snake.Drow();
+
         }
         
         
