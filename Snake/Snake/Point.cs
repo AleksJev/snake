@@ -53,6 +53,12 @@ namespace Snake
 
 
         }
+        //метод затирания точки с консоли
+        public void Clear()
+        {
+            sym = ' ';
+            Draw();
+        }
 
         public void Draw()
         {
