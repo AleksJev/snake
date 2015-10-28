@@ -8,6 +8,7 @@ namespace Snake
 {
     class Figure
     {
+        //список точек
         protected List<Point> pList;
 
         public void Drow()
